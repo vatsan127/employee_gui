@@ -1,9 +1,15 @@
-import { useState } from "react";
+import Navbar from "./components/Navbar";
+import EmployeeForm from "./components/EmployeeForm";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <h1>Employee</h1>;
+  return (
+    <div className="">
+      <Navbar />
+      <div className="container mt-5 col-5 border rounded p-3 shadow">
+        <EmployeeForm />
+      </div>
+    </div>
+  );
 }
 
 export default App;
